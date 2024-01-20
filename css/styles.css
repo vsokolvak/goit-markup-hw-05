@@ -608,18 +608,19 @@ input, textarea {
     justify-content: center;
     top: 0;
     left: 0;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     padding: 80px 0;
     background: rgba(46, 47, 66, 0.40);
     overflow: scroll;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-container {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     margin-bottom: 80px;
     margin-top: 80px;
     width: 408px;
@@ -627,36 +628,38 @@ input, textarea {
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     display: flex;
     flex-direction: column;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
+    padding: 0;
+    cursor: pointer;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    align-self: end;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 300ms ease-in;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms ease-in;
 }
 
-.modal-form-close:active {
+.modal-form-close:active, .modal-form-close:hover {
     border: none;
     background-color: #404BBF;
-}
-
-.modal-form-close:active svg {
-    fill: #ffffff;
-}
-
-.modal-form-close:hover {
-    cursor: pointer;
     transform: rotate(180deg) scale(1.1);
+}
+
+.modal-form-close:active svg, .modal-form-close:hover svg {
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-horm-title {
