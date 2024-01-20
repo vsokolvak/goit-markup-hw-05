@@ -457,62 +457,68 @@
                 Leave your contacts and we will call you back
             </p>
             <form name="modal">
-                <label class="form-label">
-                    <span>Name</span>
+                <div class="modalform-label-wrapper">
+                    <label class="form-label" for="user-name">
+                        <span>Name</span>
+                    </label>
                     <div class="modalform-input-wrap">
-                        <input type="text" name="name" 
-                        id="name" class="form-input">
-                        <svg class="modalform-icon" width="18" height="18">
+                        <input type="text" name="name" id="user-name" class="form-input">
+                        <svg class="modalform-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
-                </label>
-                <label class="form-label">
-                    <span>Phone</span>
+                </div>
+                <div class="modalform-label-wrapper">
+                    <label class="form-label" for="user-phone">
+                        <span>Phone</span>
+                    </label>
                     <div class="modalform-input-wrap">
-                        <input type="text" name="name" 
-                        id="name" class="form-input">
-                        <svg class="modalform-icon" width="18" height="18">
+                        <input type="text" name="phone" id="user-phone" class="form-input">
+                        <svg class="modalform-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-                </label>
-                <label class="form-label">
-                    <span>Email</span>
+                </div>
+                <div class="modalform-label-wrapper">
+                    <label class="form-label" for="user-email">
+                        <span>Email</span>
+                    </label>
                     <div class="modalform-input-wrap">
-                        <input type="text" name="name" 
-                        id="name" class="form-input">
-                        <svg class="modalform-icon" width="18" height="18">
+                        <input type="text" name="email" id="user-email" class="form-input">
+                        <svg class="modalform-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
-                </label>
+                </div>
 
-                <label class="form-label form-modal-textarea" for="commentText">
-                    <span>Comment</span>
-                </label>
-                <textarea name="commentText" class="form-input form-textarea" placeholder="Text input" 
-                id="commentText"></textarea>
+                <div class="modalform-textarea-wrap">
+                    <label class="form-label form-modal-textarea" for="user-comment">
+                        <span>Comment</span>
+                    </label>
+                    <textarea name="user-comment" class="form-input form-textarea" placeholder="Text input" 
+                    id="user-comment"></textarea>
+                </div>
 
-                <input type="checkbox" name="accept" id="accept"
-                class="visually-hidden modal-checkbox">
-                <label for="accept" class="modal-checkbox-label">
-                    <span class="fake-checkbox">
-                        <svg class="icon-checkactive"
-                        width="16" height="16">
-                            <use href="./images/icons.svg#icon-checkaktive"></use>
-                        </svg>
-                        <svg class="icon-check"
-                        width="16" height="16">
-                            <use href="./images/icons.svg#icon-check"></use>
-                        </svg>
-                    </span>
-                    <span class="modal-checkbox-text">
-                        I accept the terms and conditions of the
-                        <a href="">Privacy Policy</a>
-                    </span>
-                </label>
-
+                <div class="modal-checkbox-wraper">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" value="true"
+                    class="visually-hidden modal-checkbox">
+                    <label for="user-privacy" class="modal-checkbox-label">
+                        <span class="fake-checkbox">
+                            <svg class="icon-checkactive"
+                            width="16" height="16">
+                                <use href="./images/icons.svg#icon-checkaktive"></use>
+                            </svg>
+                            <svg class="icon-check"
+                            width="16" height="16">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        <span class="modal-checkbox-text">
+                            I accept the terms and conditions of the
+                            <a href="">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>
                 <button type="submit" class="solution-button modal-button">
                     Send
                 </button>
