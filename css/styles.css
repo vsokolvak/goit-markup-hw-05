@@ -765,27 +765,18 @@ input, textarea {
     fill: transparent;
 }
 
-.modal-checkbox:checked + .fake-checkbox {
+.icon-checkactive {
+    display: none;
+}
+
+.modal-checkbox:checked + .modal-checkbox-label .fake-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
 
-.icon-checkactive {
-    display: none;
-    flex-shrink: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.icon-check {
-    fill: #FFFFFF;
-    stroke: #8E8F99;
-    flex-shrink: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+.modal-checkbox:checked + .modal-checkbox-label .icon-checkactive {
+    display: block;
 }
 
 .modal-checkbox-label {
