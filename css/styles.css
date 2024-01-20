@@ -669,9 +669,7 @@ input, textarea {
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.04em;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    margin-bottom: 4px;
 }
 
 .modalform-input-wrap {
@@ -718,10 +716,6 @@ input, textarea {
     resize: none;
 }
 
-.form-modal-textarea {
-    margin-bottom: 16px;
-}
-
 .fake-checkbox {
     width: 16px;
     height: 16px;
@@ -758,6 +752,11 @@ input, textarea {
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.modal-checkbox-label:hover {
+    cursor: pointer;
 }
 
 .modal-checkbox-label p {
