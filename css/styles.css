@@ -672,7 +672,6 @@ input, textarea {
 }
 
 .form-label {
-    display: block;
     color: #8E8F99;
     font-size: 12px;
     font-style: normal;
@@ -704,7 +703,7 @@ input, textarea {
     width: 100%;
 }
 
-.form-input, .form-input::placeholder {
+.form-input .form-input::placeholder {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -769,7 +768,7 @@ input, textarea {
     cursor: pointer;
 }
 
-.modal-checkbox-text {
+.modal-checkbox-label p {
     color: #8E8F99;
     font-size: 12px;
     font-style: normal;
@@ -778,7 +777,7 @@ input, textarea {
     letter-spacing: 0.04em;
 }
 
-.modal-checkbox-text a {
+.modal-checkbox-label a {
     color: #4D5AE5;
     text-decoration-line: underline;
 }

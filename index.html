@@ -489,11 +489,12 @@
                     </svg>
                 </div>
 
-                <label class="form-label form-modal-textarea" for="commentText">
+                <label class="form-label form-modal-textarea">
                     <span>Comment</span>
+                    <textarea name="commentText" 
+                    class="form-input form-textarea"
+                    placeholder="Text input"></textarea>
                 </label>
-                <textarea name="commentText" class="form-input form-textarea" placeholder="Text input" 
-                id="commentText"></textarea>
 
                 <input type="checkbox" name="accept" id="accept"
                 class="visually-hidden modal-checkbox">
@@ -508,10 +509,10 @@
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    <span class="modal-checkbox-text">
+                    <p class="modal-checkbox-text">
                         I accept the terms and conditions of the
                         <a href="">Privacy Policy</a>
-                    </span>
+                    </p>
                 </label>
 
                 <button type="submit" class="solution-button modal-button">
