@@ -429,27 +429,23 @@
                 </ul>
             </div>
             <div class="footer-subscribe">
-                <p class="subscribe-title">Subscribe</p>
                 <form name="subscribe" class="subscribe-form">
-                    <input 
-                    type="text" 
-                    placeholder="E-mail"
-                    name="email"
-                    class="subscribe-input"
-                    >
-                    <button type="submit" class="subscribe-submit">
-                        <span>Subscribe</span>
-                        <svg class="subscribe-submit-icon" 
-                        width="24" height="24">
-                            <use href="./images/icons.svg#icon-subscribe"></use>
-                        </svg>
-                    </button>
+                    <label class="subscribe-title" for="email">Subscribe</label>
+                    <div class="subscribe-input-wrap">
+                        
+                        <button type="submit" class="subscribe-submit">
+                            <span>Subscribe</span>
+                            <svg class="subscribe-submit-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </footer>
 
-    <div class="modal-container">
+    <!-- <div class="modal-container">
         <div class="modal-form-container">
             <button type="button" class="modal-form-close">
                 <svg class="modal-icon-close" width="8" height="8">
@@ -493,12 +489,11 @@
                     </svg>
                 </div>
 
-                <label class="form-label form-modal-textarea">
+                <label class="form-label form-modal-textarea" for="commentText">
                     <span>Comment</span>
-                    <textarea name="commentText" 
-                    class="form-input form-textarea"
-                    placeholder="Text input"></textarea>
                 </label>
+                <textarea name="commentText" class="form-input form-textarea" placeholder="Text input" 
+                id="commentText"></textarea>
 
                 <input type="checkbox" name="accept" id="accept"
                 class="visually-hidden modal-checkbox">
@@ -513,10 +508,10 @@
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    <p class="modal-checkbox-text">
+                    <span class="modal-checkbox-text">
                         I accept the terms and conditions of the
                         <a href="">Privacy Policy</a>
-                    </p>
+                    </span>
                 </label>
 
                 <button type="submit" class="solution-button modal-button">
@@ -524,7 +519,7 @@
                 </button>
             </form>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
