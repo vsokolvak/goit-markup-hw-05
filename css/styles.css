@@ -523,12 +523,12 @@ input, textarea {
     margin-left: 80px;
     flex-direction: column;
     display: flex;
-    gap: 16px;
 }
 
 .subscribe-title {
     color: #FFF;
     font-size: 16px;
+    margin-bottom: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
@@ -580,7 +580,8 @@ input, textarea {
     background: #4D5AE5;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -592,7 +593,6 @@ input, textarea {
 .subscribe-submit:hover,
 .subscribe-submit:focus {
     background-color: #404BBF;
-    cursor: pointer;
 }
 
 
@@ -735,10 +735,6 @@ input, textarea {
     height: 120px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-modal-textarea {
-    margin-bottom: 16px;
 }
 
 .modal-checkbox-wraper {
