@@ -601,6 +601,10 @@ input, textarea {
     margin-left: 16px;
 }
 
+.width-full {
+    width: 100%;
+}
+
 .modal-container {
     width: 100%;
     position: fixed;
