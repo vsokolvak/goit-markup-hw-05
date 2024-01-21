@@ -618,7 +618,6 @@ input, textarea {
     min-height: 100%;
     width: 100%;
     width: 100%;
-    width: 100vw;
     padding: 80px 0;
     background: rgba(46, 47, 66, 0.40);
     width: 100%;
@@ -672,11 +671,6 @@ input, textarea {
 .modal-form-close svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
-.modal-form-close svg:focus, .modal-form-close svg:hover {
-    fill: #ffffff;
-    
-} */
 
 .modal-horm-title {
     color: #2E2F42;
@@ -792,8 +786,6 @@ input, textarea {
 }
 
 .modal-checkbox-label {
-    /* display: flex;
-    align-items: center; */
     gap: 8px;
     margin-bottom: 24px;
     color: #8E8F99;
